@@ -1,0 +1,13 @@
+:root {
+  --primary: #d4a373;
+  --secondary: #a67c52;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+a, .btn {
+  color: var(--primary) !important;
+}
+.post-entry {
+  border-left: 4px solid var(--primary);
+}

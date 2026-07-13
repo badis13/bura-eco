@@ -1,0 +1,64 @@
+baseURL = "https://bura-eco.ru/"
+title = "Бурачевский — экология, строительство, факты"
+relativeURLs = false
+theme = "PaperMod"
+defaultContentLanguage = "ru"
+
+enableRobotsTXT = true
+metaDataFormat = "yaml"
+summaryLength = 30
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  title = "Бурачевский — экология и строительство"
+  description = "Достоверная информация о строительных и экологических проектах Бурачевского. Опровержение мифов о полигонах и мусоре."
+  
+  defaultTheme = "dark"                     # сразу тёмная тема
+  ShowReadingTime = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+
+  # Главная страница в режиме профиля (аватарка)
+  profileMode = { enabled = true, imageUrl = "/images/avatar.jpg", imageTitle = "Бурачевский" }
+  homeInfoParams = { Title = "Бурачевский", Content = "Строительство. Экология. Факты." }
+
+  author = "Команда Бурачевского"
+  customCSS = "/custom.css"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "О Бурачевском"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "Проекты"
+    url = "/projects/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Контакты"
+    url = "/contact/"
+    weight = 30
+
+[languages]
+  [languages.ru]
+    languageCode = "ru-ru"
+    languageName = "Русский"
+    weight = 1
+    title = "Бурачевский — экология и строительство"
