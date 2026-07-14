@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://bura-eco.ru/sitemap.xml
